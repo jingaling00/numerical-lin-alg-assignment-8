@@ -40,7 +40,7 @@ for n=1:20
     %disp('U_inf_norm'), disp(U_inf_norm);           
     %disp('A_inv_inf_norm'), disp(A_inv_inf_norm);
      
-    %disp('L_inv_inf_norm'), disp(L_inv_inf_norm);
+    disp('L_inv_inf_norm'), disp(L_inv_inf_norm);
     %disp('U_inv_inf_norm'), disp(U_inv_inf_norm); 
     
 end
@@ -85,7 +85,7 @@ for k = 1:N-1
         NCOL(jmax) = temp;
     end
 
-    % STEP 7–8: Perform Gaussian elimination on permuted matrix
+    % STEP 7-8: Perform Gaussian elimination on permuted matrix
     I1 = NROW(k);
     for i = k+1:N
         J1 = NROW(i);
